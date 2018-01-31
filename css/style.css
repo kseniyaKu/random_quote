@@ -1,0 +1,13 @@
+.container {
+  opacity: 0;
+}
+
+a:focus, a:hover, a:visited, a:link {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+a#me:hover {
+  text-decoration: underline;
+}
