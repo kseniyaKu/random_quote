@@ -11,3 +11,14 @@ a:focus, a:hover, a:visited, a:link {
 a#me:hover {
   text-decoration: underline;
 }
+
+/*for IE 10-11 - problems with flex column, In IE10 the default value for flex is 0 0 auto rather than 0 1 auto as defined in the latest spec */
+.row > div {
+  flex: 1 0 auto;
+}
+/*end styles for IE*/
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}

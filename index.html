@@ -16,22 +16,27 @@
 
 <body>
 
-  <body class="bg-dark text-light pt-5">
-  <div class="container mt-5">
-    <div class="row fill-viewport justify-content-center flex-column">
-      <div class="contentWrapper col-lg-8 col-sm-12 offset-lg-2 text-center">
-        <div>
-          <blockquote cite="www.quotesondesign.com" class="blockquote text-right">
-            <p id="quote"></p>
-            <p id="auth" class="blockquote-footer"></p>
-          </blockquote>
-          <div class="float-right">
-            <button class="btn btn-outline-light"><a id="tweet" target="_blank"><i class="fa fa-twitter"></i> Tweet</a></button>
-            <button class="btn btn-outline-light" id="newQuote">New Quote</button>
+  <!--for Chrome at link  <link rel="stylesheet" href="css/style.css"> should be added attribute type="text/css", 
+     CodePen do not do this when "Export" a pen (I do this at gitHub repo)-->
+<body class="bg-dark text-light pt-5">
+  <div id="container" class="container mt-5">
+    <div class="row fill-viewport flex-column flex-wrap">
+      <!--div#forIE with flex-direction: row; fix a bug of IE10, flex-direction: column; and min-height -->
+      <div id="forIE" class="row flex-row">
+        <div class="contentWrapper col-lg-8 col-sm-12 offset-lg-2 text-center mx-auto">
+          <div>
+            <blockquote cite="www.quotesondesign.com" class="blockquote text-right">
+              <p id="quote"></p>
+              <p id="auth" class="blockquote-footer"></p>
+            </blockquote>
+            <div class="float-right">
+              <button class="btn btn-outline-light"><a id="tweet" target="_blank"><i class="fa fa-twitter"></i> Tweet</a></button>
+              <button class="btn btn-outline-light" id="newQuote">New Quote</button>
+            </div>
           </div>
-        </div>
-      </div><!--end contentWrapper-->
-      <div class="ml-auto mr-auto mt-4">
+        </div><!--end contentWrapper-->
+      </div><!--end forIE-->
+      <div id="by" class="mx-auto mt-4 text-center">
           by <a id="me" href="https://www.freecodecamp.org/fcc182a81a4-ae71-4b71-a2a2-e90f07dd2bac">Kseniya</a>
       </div>
     </div> <!--end row-->

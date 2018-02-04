@@ -1,4 +1,16 @@
-/*this pen works only at codepen. To do AJAX request to quotesondesign.com we need CORS or backend. May be, I do it later*/
+/*for IE 7-9 report about outdated browser version*/
+if (document.all && !window.atob) {
+  var p = document.createElement("p");
+  p.innerHTML = "You use an outdated browser version. Please use the latest one";
+  p.style.margin = "20px";
+  if (!document.querySelector) {
+      document.body.style.backgroundColor = "rgb(52, 58, 64)";
+      document.body.style.color = "white";
+  }
+  document.body.style.fontSize = "medium";
+  document.body.replaceChild(p, document.getElementById("container"));
+}
+/*end code for IE 7-9*/
 
 $(document).ready(function() {
   $(".container").css({"-webkit-transition-property": "opacity",
